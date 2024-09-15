@@ -1,7 +1,7 @@
 /* variables to easaily changes styles */
 :root {
-  --pink: rgba(203, 115, 143, 1);
-  --pink-light: rgba(203,161,175,1);
+  --pink: #f90ef0;
+  --pink-light: #ffe9f8;
   --white: #ffffff;
   --white-transparent: #ffffff20;
 }
@@ -13,6 +13,7 @@ body {
 
 /* card container */
 .recipe-container {
+  background: var(--pink-light);
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -26,7 +27,7 @@ body {
 .recipe-card {
   width: 300px;
   background-color: var(--white-transparent);
-  border: 1px solid var(--pink);
+  border: 3px solid var(--pink);
   padding-bottom: 1rem;
   text-align: center;
 }
@@ -54,12 +55,24 @@ body {
 }
 
 /* search bar */
+.name-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+}
 .search-bar {
-  background-color: var(--white-transparent);
+  background-color: #ffe9f8;
   padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #f90ef0 0.5px solid;
 }
 
-.search-bar input[type=text] {
+.search-bar input[type="text"] {
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1rem;
